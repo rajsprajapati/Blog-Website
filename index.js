@@ -53,10 +53,9 @@ app.post("/edit",(req, res) => {
     // content.splice(item,1);
 
 })
-
-
-app.post("/back",(req,res)=>{
-    res.render("/");
+app.post("/back",(req, res) => {
+    const item = req.body["index"];
+    res.redirect("/");
 })
 app.get("/contact",(req,res)=>{
     res.render("contact.ejs");
