@@ -1,0 +1,52 @@
+/* Target the header element */
+*{
+    font-family: sans-serif;
+}
+header {
+    background-color: #efefef; /* Background color for the header */
+    padding: 20px; /* Padding around the header */
+    /* border-bottom: 1px solid #ccc; Bottom border */
+}
+
+/* Target the navigation (nav) element */
+nav {
+    display: flex; /* Use flexbox layout for the navigation items */
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style the blog logo */
+.blog_logo {
+    font-size: 24px; /* Font size of the logo */
+    font-weight: 300; /* Bold font for the logo */
+}
+
+/* Style the logo color */
+.logo_color {
+    color: #6246EA; /* Color of the logo text */
+}
+
+/* Style the navigation items (list items) */
+.items {
+    list-style-type: none; /* Remove default list bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style each navigation item (list item) */
+.items li {
+    display: inline; /* Display items in a line */
+    margin-right: 25px; /* Add spacing between items */
+}
+
+/* Style links within navigation items */
+.items li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default color for links */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Hover effect for links */
+.items li a:hover {
+    color: #6246EA; /* Change color on hover */
+}

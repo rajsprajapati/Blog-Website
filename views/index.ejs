@@ -1,0 +1,48 @@
+<%- include("partials/header.ejs") %>
+<main>
+    <div class="leftside">
+        <h1>New Blogs</h1>
+
+        <% if (locals.Blog_length !==0) { %>
+            <% for (let index=0; index < locals.Blog_length; index++) { %>
+                <section class="blog">
+                    <p class="blog-title"><%- Blog_title[index] %></p>
+                    <p class="Blog_paragraph"><%- Blog_content[index] %></p>
+                    <div class="bloginfo">
+                        <form method="post" class="read" action="/read">
+                            <input type="hidden" name="index" value="<%= index %>">
+                            <input class="button" type="submit" value="Read More">
+                        </form>
+                        <div class="moreinfo">
+                            <form method="POST" class="Delete" action="/delete">
+                                <input type="hidden" name="index" value="<%= index %>">
+                                <input class="button" type="submit" value="Delete">
+                            </form>
+                            <form method="POST" class="Edit" action="/edit">
+                                <input type="hidden" name="index" value="<%= index %>">
+                                <input class="button" type="submit" value="edit" onclick="">
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <% } %>
+                    <% } else { %>
+                        <p>No blogs available.</p>
+                        <% } %>
+
+    </div>
+    <div class="rightside">
+        <h1>Create a New Blog</h1>
+        <form action="/submit-blog" class="Blog_form" method="post">
+            <label for="title" class="label">Title:</label>
+            <input type="text" id="title" class="form_input" name="title" placeholder="Blog Title" value="<%= Blog_title[locals.Blogitem] %>" required>
+            <br>
+            <label for="content" class="label">Content:</label><br>
+            <textarea id="content area" class="form_input" name="content" rows="20" cols="40" placeholder="Blog Content...." required ><%=Blog_content[locals.Blogitem] %></textarea>
+            <br>
+            <input type="submit" class="submit_blog_form form_input" value="Submit Blog">
+        </form>
+    </div>
+
+</main>
+    <%- include("partials/footer.ejs") %>

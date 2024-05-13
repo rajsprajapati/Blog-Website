@@ -1,0 +1,40 @@
+
+
+.Comment_form > h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Blog_Contact {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #e2e1e1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* Input field styling */
+.form_inputs,
+#Comment {
+  width: calc(100% - 24px);
+  margin: 0 0 15px 0;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+
+
+/* Submit button styling */
+.submit_commant_form {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  background-color: #6246EA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

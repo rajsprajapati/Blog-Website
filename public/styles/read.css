@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 10px auto 10px;
+    width: 650px;
+}
+.container > h2{
+    margin: 20px 0;
+}
+.readblog{
+    border: 1px solid #202020c4;
+    border-radius: 5px;
+}
+.readblog > pre{
+    margin: 0;
+    padding: 20px;
+    /* width: 600px; */
+    white-space: wrap;
+    line-height: 25px;
+    color: #202020c4;
+
+}
+.readblog > div{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}

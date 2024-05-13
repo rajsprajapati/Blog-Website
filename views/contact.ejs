@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+
+<div class="Comment_form">
+  <h1>Contact Us</h1>
+  <form action="/submit-contact" class="Blog_Contact" method="post">
+    <input name="name" type="text" id="title" class="form_inputs" name="title" placeholder="Name">
+    <br>
+    <input type="email"  class="form_inputs" placeholder="Email"/>
+    <br>
+    <textarea name="text" id="Comment area" class="form_inputs" name="content" rows="20" cols="40" placeholder="Comment" required></textarea>
+    <br>
+    <input type="submit" class="submit_commant_form form_inputs" value="Submit">
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
