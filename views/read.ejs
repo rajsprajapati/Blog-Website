@@ -6,11 +6,11 @@
             <%- Blog_content[index] %>
         </pre>
         <div>
-            <form method="POST" class="Back" action="/edit">
+            <form method="POST" class="Back" action="/back">
                 <input type="hidden" name="index" value="<%= index %>">
                 <input class="button" type="submit" value="Back">
             </form>
-            <form method="POST" class="Next" action="/edit">
+            <form method="POST" class="Next" action="/back">
                 <input type="hidden" name="index" value="<%= index %>">
                 <input class="button" type="submit" value="Next">
 
