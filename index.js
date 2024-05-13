@@ -55,7 +55,7 @@ app.post("/edit",(req, res) => {
 })
 
 
-app.get("/back",(req,res)=>{
+app.post("/back",(req,res)=>{
     res.render("/");
 })
 app.get("/contact",(req,res)=>{
