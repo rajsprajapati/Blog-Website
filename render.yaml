@@ -1,0 +1,12 @@
+# Exported from Render on 2025-05-31T09:21:25Z
+services:
+- type: web
+  name: Blog-Website
+  runtime: node
+  repo: https://github.com/rajsprajapati/Blog-Website
+  plan: free
+  region: singapore
+  buildCommand: npm install
+  startCommand: node index.js
+  autoDeployTrigger: commit
+version: "1"
